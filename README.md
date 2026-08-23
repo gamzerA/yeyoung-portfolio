@@ -1,7 +1,6 @@
 # Yeyoung Lee — Graduate Research Portfolio
 
-이예영(Yeyoung Lee)의 대학원 연구실 지원용 단일 페이지 포트폴리오. Next.js(App Router) + TypeScript + Tailwind CSS로 구현되었다.
-
+이예영의 단일 페이지 포트폴리오.😉
 ## 실행 방법
 
 ```bash
@@ -59,8 +58,6 @@ src/
     skills.ts
     honors.ts
 ```
-
-콘텐츠는 모두 `src/data/*.ts`에 데이터 객체/배열로 분리되어 있어, 문구 수정 시 컴포넌트 코드를 건드리지 않고 데이터 파일만 편집하면 된다.
 
 ## 콘텐츠 원칙
 
