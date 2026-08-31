@@ -22,6 +22,35 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "extinction-response-fund",
+    title:
+      "Chungbuk Regional Depopulation Response Fund Performance Analysis AI Agent",
+    period: "2026.08",
+    context: "Chungbuk Regional AI Innovation Project",
+    role: "Team Lead",
+    status: "completed",
+    problem:
+      "충북 지방소멸대응기금의 배분·집행 성과와 청년 인구 변화를 함께 분석하고, 정책 담당자가 근거를 확인하면서 차년도 투자 방향을 검토할 수 있는 AI 서비스를 구축했습니다.",
+    data: "충북 11개 시군의 2017~2024년 지방소멸대응기금 및 청년 인구·순이동 관련 데이터를 활용했습니다.",
+    approach: [
+      "분석 API가 반환한 수치만 인용하고 호출 엔드포인트와 출처를 함께 표시하는 근거 기반 AI 질의 기능 구현",
+      "시군별 기금 배분액·집행액·집행률과 청년 인구지표를 비교하는 진단 대시보드 구성",
+      "처치군·비교군의 순이동률 추세와 기금 효과를 검토하는 인과분석 흐름 설계",
+      "분석 결과를 차년도 투자 제안과 사업계획서 초안으로 연결하는 의사결정 지원 흐름 구현",
+    ],
+    validation:
+      "공개 배포 환경에서 분석 API 연결 상태와 데이터 기준 시점을 표시하며, 답변 수치가 API 응답과 출처에 근거하도록 구성했습니다. 서비스는 2024년 12월 기준 데이터로 정상 운영 중입니다.",
+    result:
+      "AI 질의, 기금 대시보드, 인과분석, 차년도 제안, 사업계획서 초안 기능을 갖춘 서비스를 완성해 공개 배포했습니다.",
+    techStack: ["AI Agent", "REST API", "Causal Inference", "Data Dashboard"],
+    links: [
+      {
+        label: "라이브 서비스 바로가기",
+        url: "https://chungbuk-insight-agent.lovable.app/",
+      },
+    ],
+  },
+  {
     id: "greenfab-insight",
     title:
       "GreenFab Insight — Semiconductor Defect Prediction, Explanation, and ESG Dashboard",
@@ -86,29 +115,6 @@ export const projects: Project[] = [
       alt: "SafeNavi 서비스 랜딩 화면 캡쳐",
       caption: "safenavi.site 캡쳐",
     },
-  },
-  {
-    id: "extinction-response-fund",
-    title:
-      "Impact Validation and Investment Recommendation for the Local Extinction Response Fund",
-    period: "2026.08 – 현재",
-    context: "Chungbuk Regional AI Innovation Project",
-    role: "Team Lead",
-    status: "ongoing",
-    problem:
-      "지역소멸대응기금 투자의 효과를 검증하고, 다음 연도 투자 방향을 제시하기 위한 프레임워크를 설계하는 진행 중인 프로젝트입니다.",
-    data: "청년 순이동 등 정책 성과변수를 활용합니다.",
-    approach: [
-      "청년 순이동 등 성과변수를 활용한 효과검증 프레임워크 설계",
-      "기준선(baseline), 시점 외 검증, 오차 분석 설계",
-      "이중차분(DID) 기반 근거 등급 설계",
-      "대화형 질의 → 진단 대시보드 → 차년도 투자계획 생성으로 이어지는 서비스 흐름 기획",
-    ],
-    validation:
-      "기준선 설정, 시점 외 검증, 오차 분석을 포함한 검증 체계를 설계하는 단계입니다.",
-    result:
-      "현재 진행 중인 프로젝트로, 팀 리드로서 효과검증 프레임워크와 서비스 흐름을 설계하고 있습니다. 아직 완료된 성과는 없습니다.",
-    techStack: [],
   },
   {
     id: "influence",
