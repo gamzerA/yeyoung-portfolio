@@ -49,6 +49,11 @@ export const projects: Project[] = [
         url: "https://chungbuk-insight-agent.lovable.app/",
       },
     ],
+    image: {
+      src: `${siteBasePath}/images/projects/chungbuk-depopulation-fund.png`,
+      alt: "충북 지방소멸대응기금 성과분석 AI 에이전트의 AI 질의 화면 캡쳐",
+      caption: "충북 지방소멸대응기금 성과분석 AI 에이전트 라이브 서비스 캡쳐",
+    },
   },
   {
     id: "greenfab-insight",
